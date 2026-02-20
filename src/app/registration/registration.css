@@ -1,0 +1,99 @@
+/* Background Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Card */
+.container {
+  width: 380px;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+.container h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+input:focus {
+  border-color: #1d2671;
+  box-shadow: 0 0 8px rgba(29, 38, 113, 0.3);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Button Active */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Register Text */
+.container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.container a {
+  color: #c33764;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

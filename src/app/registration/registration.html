@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Employee Registration</h2>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+    <input type="text" placeholder="Full Name" formControlName="name" />
+    <input type="email" placeholder="Email" formControlName="email" />
+    <input type="text" placeholder="Department" formControlName="department" />
+    <input type="password" placeholder="Password" formControlName="password" />
+    <input type="number" placeholder="Salary" formControlName="salary" />
+    <input type="text" placeholder="Company Name" formControlName="companyName" />
+
+    <button type="submit">Register</button>
+
+    <p>
+      Already have account?
+      <a routerLink="/">Login</a>
+    </p>
+
+  </form>
+</div>

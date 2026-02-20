@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Employee Login</h2>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <input type="email" placeholder="Email" formControlName="email" />
+    <input type="password" placeholder="Password" formControlName="password" />
+    <input type="text" placeholder="Employee ID" formControlName="employeeId" />
+    <input type="text" placeholder="Company Name" formControlName="companyName" />
+
+    <button type="submit">Login</button>
+
+    <p>
+      Don't have account?
+      <a routerLink="/register">Register</a>
+    </p>
+
+  </form>
+</div>
